@@ -28,7 +28,7 @@ app.post("/submit",(req,res)=>{
 
 
 app.get("/",(req,res)=>{
-    res.sendFile(dir_name+"/public/index.html");
+    res.sendFile(dir_name+"/index.html");
 });
 
 app.listen(port,()=>{
