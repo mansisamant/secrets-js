@@ -21,6 +21,7 @@ app.use((req,res,next)=>{
 });
 
 app.post("/submit",(req,res)=>{
+        
             res.send("<h1>hehe i'll keep your secrets safe<h1>");
     
    
@@ -28,7 +29,7 @@ app.post("/submit",(req,res)=>{
 
 
 app.get("/",(req,res)=>{
-    res.sendFile(dir_name+"/index.html");
+    res.sendFile("/index.html");
 });
 
 app.listen(port,()=>{
